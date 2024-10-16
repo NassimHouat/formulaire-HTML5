@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de saisie</title>
+</head>
+<body>
+    <form action="#" method="post">
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+
+        <label for="sexe">Sexe :</label>
+        <select id="sexe" name="sexe" required>
+            <option value="">Choisir sexe</option>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <label for="email">Adresse Mail :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="adresse">Adresse postale :</label>
+        <input type="text" id="adresse" name="adresse" required><br><br>
+
+        <label for="code_postal">Code postal :</label>
+        <input type="text" id="code_postal" name="code_postal" pattern="\d{5}" maxlength="5" required><br><br>
+
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required><br><br>
+
+        <label for="metier">Métier exercé :</label>
+        <select id="metier" name="metier" required>
+            <option value="">--Sélectionner un métier--</option>
+            <option value="ingenieur">Ingénieur</option>
+            <option value="medecin">Médecin</option>
+            <option value="enseignant">Enseignant</option>
+            <option value="artisan">Artisan</option>
+            <option value="etudiant">Étudiant</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <label for="nationalite">Nationalité :</label>
+        <select id="nationalite" name="nationalite" required>
+            <option value="">Choisir nationalite</option>
+            <option value="fr">Française</option>
+            <option value="be">Belge</option>
+            <option value="ch">Suisse</option>
+            <option value="lu">Luxembourgeoise</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+        <label for="pays_naissance">Pays de naissance :</label>
+        <input type="text" id="pays_naissance" name="pays_naissance" required><br><br>
+
+        <label for="securite_sociale">Numéro de sécurité sociale :</label>
+        <input type="text" id="securite_sociale" name="securite_sociale" pattern="\d{15}" maxlength="15" required><br><br>
+
+        <label for="passeport">Numéro de passeport :</label>
+        <input type="text" id="passeport" name="passeport" required><br><br>
+
+        <label for="date_delivrance_passeport">Date de délivrance du passeport :</label>
+        <input type="date" id="date_delivrance_passeport" name="date_delivrance_passeport" required><br><br>
+
+        <label for="date_validite_passeport">Date de validité du passeport :</label>
+        <input type="date" id="date_validite_passeport" name="date_validite_passeport" required><br><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
